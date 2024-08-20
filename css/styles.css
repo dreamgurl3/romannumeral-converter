@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(173, 216, 230);
+}
+
+.mainContainer {
+    margin: auto;
+    padding: 15px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.inputContainer {
+    width: 80%;
+    margin-inline: auto;
+}
+
+input[type="text"] {
+    width: 50%;
+    height: 40px;
+}
+
+#convert {
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+label {
+    font-size: 16px;
+}
