@@ -5,12 +5,12 @@ const conversion = document.getElementById("conversionHere");
 const validateInput = () => {
     const inputVal = parseInt(numberInput.value);
 
-    if (isNaN(inputVal) || inputVal < 1 || inputVal > 3999) {
+    if (!numberInput.value || isNaN(inputVal) || inputVal < 1 || inputVal > 3999) {
         conversion.innerText = "Please enter a valid number between 1 and 3999.";
-        return false;
+        return;
     }
     conversion.innerText = decimalToRoman(inputVal);
-    return true;
+    return;
 };
 const decimalToRoman = (num) => {
     const romanNumerals = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"];
